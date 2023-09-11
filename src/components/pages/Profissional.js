@@ -1,42 +1,26 @@
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
+import React, { useState } from 'react';
 
 function Profissional({name}){
+    var links = ['https://caiogsan.github.io/proj-acad', 'https://caiogsan.github.io/pop-flix/', 'https://caiogsan.github.io/Projeto-tiago', 'https://caiogsan.github.io/match-game/']
+    const [currentIndex, setCurrentIndex] = useState(0);
     function next(){
-        document.getElementsByClassName("change")[0].src = 'https://caiogsan.github.io/Gym-Project/index.html';
+        const newIndex = (currentIndex + 1) % links.length; // Calculate next index
+        setCurrentIndex(newIndex); // Update current index
     }
-    
+  
     function before(){
-        document.getElementsByClassName("change")[0].src = 'https://caiogsan.github.io/projeto4/';
+        const newIndex = (currentIndex - 1 + links.length) % links.length; // Calculate previous index
+        setCurrentIndex(newIndex); // Update current index
     }
+
     return (
         <div className="text-center mt-8 mb-8 min-h-[500px] flex flex-col ">
-            <h1 className="text-2xl font-merienda">Hey {name}, check out a few of my best projects!!</h1>
-            <div className="m-auto w-[95%] flex">
+            <h1 className="text-2xl font-merienda">Hey {name}, check out a few of my projects!!</h1>
+            <div className="m-auto w-[95%] my-10 flex">
                 <button onClick={before} className="m-auto mr-8 text-4xl"><FaArrowAltCircleLeft></FaArrowAltCircleLeft></button>
-                <iframe scr title="projeto1" className="rounded change h-[600px] mt-12 w-[100%] overflow-hidden" src="https://caiogsan.github.io/projeto4/"></iframe>
+                <iframe title="projeto1" className="rounded change h-[600px] w-[100%] overflow-hidden" src={links[currentIndex]}></iframe>
                 <button onClick={next} className="m-auto ml-8 text-4xl"><FaArrowAltCircleRight></FaArrowAltCircleRight></button>
-            </div>
-            <div className='flex h-48 w-[85%] m-auto px-12 mt-28 justify-between content-evenly'>
-                <div className='bg-black rounded h-48 w-[30%]'>
-
-                </div>
-                <div className='bg-red-500 rounded h-48 w-[30%]'>
-
-                </div>
-                <div className='bg-green-500 rounded h-48 w-[30%]'>
-
-                </div>
-            </div>
-            <div className='flex h-48 w-[85%] m-auto px-12 mt-28 justify-between content-evenly'>
-                <div className='bg-black rounded h-48 w-[30%]'>
-
-                </div>
-                <div className='bg-red-500 rounded h-48 w-[30%]'>
-
-                </div>
-                <div className='bg-green-500 rounded h-48 w-[30%]'>
-
-                </div>
             </div>
         </div>
     )

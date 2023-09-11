@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'personal': "url('/src/img/personal.PNG')"
+        'personal': "url('/src/img/personal.PNG')",
+        'code': "url('/src/img/code.jpg')",
       },
       fontFamily: {
         "merienda": ['Merienda', "sans-serif"]
