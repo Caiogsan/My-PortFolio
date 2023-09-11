@@ -8,7 +8,7 @@ function Navbar(){
         <nav className={`mt-6 border-b pb-6 ${styles.animacao}`}>
             
             <div className="flex justify-between m-auto items-center w-[60%]">
-                <Link to={"/"}><img src={logo} alt="Logotipo"></img></Link>
+                <Link to={"/My-PortFolio"}><img src={logo} alt="Logotipo"></img></Link>
                 <ul className="font-merienda text-center">
 
                     <p>Welcome, please enjoy everything the website has to offer!!</p>

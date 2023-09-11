@@ -13,7 +13,7 @@ function App() {
     <Router>
       <Navbar></Navbar>
       <Routes>
-        <Route path="/" exact element={<Home setNome={setNome} />}/>
+        <Route path="/My-PortFolio" exact element={<Home setNome={setNome} />}/>
         <Route path="/inside" exact element={<HomeAfter name={nome} />}/>
         <Route path="/inside/personal" exact element={<Personal name={nome} />}/>
         <Route path="/inside/profissional" exact element={<Profissional name={nome} />}/>
