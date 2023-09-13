@@ -1,0 +1,12 @@
+@keyframes transitionInFast {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1;   
+    }
+}
+
+.animacao {
+    animation: transitionInFast 2s;
+}

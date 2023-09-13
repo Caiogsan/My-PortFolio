@@ -10,7 +10,6 @@ function Navbar(){
             <div className="flex justify-between m-auto items-center w-[60%]">
                 <Link to={"/My-PortFolio"}><img src={logo} alt="Logotipo"></img></Link>
                 <ul className="font-merienda text-center">
-
                     <p>Welcome, please enjoy everything the website has to offer!!</p>
                     <p className="testando text-[9px]">Caio Goncalves</p>
                 </ul>

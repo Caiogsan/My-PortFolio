@@ -8,7 +8,6 @@ function Home({setNome}){
             <h1>Tell me your name:</h1>
             <input type="text" className="p-2 bg-[#7b7b7b] rounded h-6" onChange={(e) => setNome(e.target.value)}></input>
             <Link to={"/inside"} className="font-bold hover:text-green-500">GET IN!</Link>
-            
         </section>
     )
 }

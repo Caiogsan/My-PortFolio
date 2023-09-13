@@ -1,11 +1,11 @@
 import Navbar from "./components/layout/Navbar";
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Home from "./components/pages/Home";
+import Home from "./pages/Home";
 import Footer from "./components/layout/Footer";
-import HomeAfter from "./components/pages/HomeAfter";
+import HomeAfter from "./pages/HomeAfter";
 import { useState } from 'react';
-import Personal from "./components/pages/Personal";
-import Profissional from "./components/pages/Profissional"
+import Personal from "./pages/Personal";
+import Profissional from "./pages/Profissional"
 
 function App() {
   const [nome, setNome] = useState()

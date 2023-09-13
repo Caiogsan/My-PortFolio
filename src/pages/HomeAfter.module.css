@@ -1,16 +1,14 @@
 @keyframes transitionInFast {
     from {
         opacity: 0;
-        
     }
-
     to {
-        opacity: 1;
-       
-        
+        opacity: 1;  
     }
 }
 
-.animacao {
+.teste {
     animation: transitionInFast 2s;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
